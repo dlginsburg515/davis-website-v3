@@ -1,0 +1,27 @@
+<div class="project-card frosted-glass col-md-12 p-5 rounded-4">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-7 p-5 rounded-4">
+        <div class="project-title">{{ project.title }}</div>
+        <div class="project-purpose">Purpose: {{ project.purpose}}</div>
+        <div class="project-hardware">Hardware and/or Applications: {{ project.hardware}}</div>
+        <br>
+        <div class="project-description">
+         {{ project.description }}
+        </div>
+    </div>
+    
+    @if (project.video != '') {
+        <div class="embed-responsive embed-responsive-16by9">
+            
+          </div>
+    }
+    @else {
+        <div class="col-sm-5 p-5 rounded-4">
+        <img src="soon.jpg" alt="Image or Video Coming Soon" class="img-fluid rounded-4"/>
+    </div>
+    }
+    </div>
+    </div>
+  </div>
+  

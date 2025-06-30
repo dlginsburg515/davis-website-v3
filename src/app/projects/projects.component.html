@@ -1,0 +1,188 @@
+<br><br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+<body>
+    <section
+      class="d-flex align-items-center justify-content-center text-white text-center px-3"
+      style="min-height: 300px; position: relative; overflow: hidden"
+    >
+      <!-- Background image -->
+      <img
+        src="https://images.unsplash.com/photo-1580584126903-c17d41830450?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+        style="z-index: 0"
+        alt="Banner background"
+      />
+
+      <!-- Frosted glass panel -->
+      <div
+        class="position-relative z-2 px-5 py-3 rounded-4"
+        style="background-color: rgba(0, 0, 0, 0.4); backdrop-filter: blur(8px)"
+      >
+        <h1 class="fw-bold">Projects</h1>
+        <p>
+          This is an incomplete list. I am more than happy to discuss other projects
+          that I have accomplished. I will be adding projects as I can go back and
+          document them better than original video for the assignment. There are
+          videos below that I will also be updating with better videos.
+        </p>
+      </div>
+    </section>
+ 
+  <!-- <div>
+      <label for="search" class="form-label">Search: </label>
+      <input type='text' [(ngModel)]='input' (keyup)="sendInput()" />
+    </div> -->
+ 
+  
+ 
+  <div class="container mt-4">
+
+  <div class="project-card frosted-glass col-md-12 p-5 rounded-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 p-5 rounded-4">
+          <div class="project-title">
+            Wifi Weather Station and NeoPixel Controller
+          </div>
+          <div class="project-purpose">
+            Purpose: ECE 476 Advanced Embedded Systems
+          </div>
+          <div class="project-hardware">
+            Hardware and/or Applications: Raspberry Pi Pico and Thonny
+          </div>
+          <br />
+          <div class="project-description">
+            The Raspberry Pi Pico broadcasts a wifi signal. Once a device is
+            connect and it navigates to the Pi's IP Address, the Pi transmitts a
+            web page which has temperature, pressure, and light. These are read
+            from sensors connected to the Pico. If the user enters data and hits
+            submit, the Pico changes the color of the Neopixels and can toggle
+            on or off.
+          </div>
+        </div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/vLawAeewmSM?si=Ui7cgHl11dT1bAtM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <div class="project-card frosted-glass col-md-12 p-5 rounded-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 rounded-4">
+          <div class="project-title">GPS Minesweeper Game</div>
+          <div class="project-purpose">ECE 476 Advanced Embedded Systems</div>
+          <div class="project-hardware">
+            Hardware and/or Applications: Raspberry Pi Pico and Thonny
+          </div>
+          <br />
+          <div class="project-description">
+            The Raspberry Pi Pico hosts a game that utilizes a GPS signal. The
+            Pico generates a random target. The user drops a pin by pressing a
+            button. The location of this pin is based on GPS signal or joystick
+            input. After a pin is dropped, the Pico draws a circle with the pin
+            in the center and the target someplace on the radius. Other devices
+            can connect to the Pico via bluetooth to track progress. The game is
+            won when a pin is dropped within two meters of the target. Below is
+            a video demostration without GPS. There will also be a link to a
+            short demonstrating just the GPS feature. (This link is low quality
+            and will be updated in the future.)
+          </div>
+          <br />
+          <div>
+            <a
+              href="https://youtube.com/shorts/DqG12_UxPRA?si=JPR9ialnKRjhjnTU"
+              class="nav-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GPS Demo Link</a
+            >
+          </div>
+          <br />
+        </div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ZjoC6-J93Fk?si=THwn0PebrBvh7_Sk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="project-card frosted-glass col-md-12 p-5 rounded-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 rounded-4">
+          <div class="project-title">
+            Capture and Compare with Range Senser and Stepper Motor
+          </div>
+          <div class="project-purpose">ECE 376 Embedded Systems</div>
+          <div class="project-hardware">
+            Hardware and/or Applications: PIC18F4620
+          </div>
+          <br />
+          <div class="project-description">
+            The PIC measures the distance an object is from the ultrasonic range
+            sensor. Based on this distance, the stepper motor is moved to a
+            certain position.
+          </div>
+          <br />
+        </div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/C2HzL3TRAk0?si=CmD86_XxoZo1mNTA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <!-- <table class="table table-striped table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th (click)="sort('title')" [class.sort-asc]="sortColumn === 'title' && sortDirection === 'asc'" [class.sort-desc]="sortColumn === 'title' && sortDirection === 'desc'">Title</th>
+          <th (click)="sort('purpose')" [class.sort-asc]="sortColumn === 'purpose' && sortDirection === 'asc'" [class.sort-desc]="sortColumn === 'purpose' && sortDirection === 'desc'">Purpose</th>
+          <th (click)="sort('description')" [class.sort-asc]="sortColumn === 'description' && sortDirection === 'asc'" [class.sort-desc]="sortColumn === 'description' && sortDirection === 'desc'">Description</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let proj of filteredProjs; track proj.id">
+          <td>{{ proj.title }}</td>
+          <td>{{ proj.purpose }}</td>
+          <td>{{ proj.description }}</td>
+          
+    
+        </tr>
+      </tbody>
+    </table> -->
+  @for(prj of PROJECT_LIST; track prj.priority){
+  <app-project-card [project]="prj"></app-project-card>
+  <br />
+  }
+</div>
+</body>

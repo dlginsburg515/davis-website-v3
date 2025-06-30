@@ -1,0 +1,47 @@
+img {
+    background-color: #fcfdfd;
+    padding: 10px;
+}
+
+.project-card {
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 0;
+    box-shadow: 5px 5px 10px #f8f8f8;
+}
+
+.project-card .project-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.project-card .project-purpose {
+    font-size: 20px;
+
+}
+
+.project-card .project-hardware {
+    font-size: 20px;
+   
+}
+
+.project-card .project-description {
+    max-width: 360px;
+    margin: 0 auto;
+    font-size: 16px;
+    user-select: none;
+}
+
+.project-card img {
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.frosted-glass {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    max-width: 900px;
+    margin: 0 auto;
+}
