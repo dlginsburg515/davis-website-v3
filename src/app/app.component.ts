@@ -1,21 +1,30 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent],
+  imports: [RouterOutlet, HeaderComponent, NgStyle],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
   title = 'davisginsburgdotcom';
+
+  headerHeight = 0;
   
   ngAfterViewInit() {
-    const header = document.querySelector('app-header');
-    if (header) {
-      const height = header.clientHeight;
-      document.querySelector('.main-content')?.setAttribute('style', `padding-top: ${height}px`);
+    this.updateHeaderHeight();
+    window.addEventListener('resize', this.updateHeaderHeight.bind(this));
+  }
+  
+  updateHeaderHeight() {
+    const nav = document.querySelector('nav.fixed-top');
+    if (nav) {
+      this.headerHeight = nav.clientHeight;
     }
   }
 }
