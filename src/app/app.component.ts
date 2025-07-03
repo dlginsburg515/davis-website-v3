@@ -10,4 +10,12 @@ import { HeaderComponent } from './header/header.component';
 })
 export class AppComponent {
   title = 'davisginsburgdotcom';
+  
+  ngAfterViewInit() {
+    const header = document.querySelector('app-header');
+    if (header) {
+      const height = header.clientHeight;
+      document.querySelector('.main-content')?.setAttribute('style', `padding-top: ${height}px`);
+    }
+  }
 }
