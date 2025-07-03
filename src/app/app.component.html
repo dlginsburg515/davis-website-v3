@@ -1,9 +1,5 @@
-
 <app-header></app-header>
-
-
-<div class="main-content">
+<div class="main-content" [ngStyle]="{ 'padding-top.px': headerHeight }">
   <router-outlet></router-outlet>
 </div>
-
 

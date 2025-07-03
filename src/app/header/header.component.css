@@ -17,6 +17,9 @@
     color: red;
 }
 
+:host {
+    display: block; }
+
 
 .logo-img {
     width: 100px;
@@ -25,7 +28,7 @@
     background-color: transparent;
 }
 
-/*Company Name Styling */
+
 .companyName {
     display: flex;
     overflow: hidden;

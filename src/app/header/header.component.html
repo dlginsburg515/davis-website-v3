@@ -1,23 +1,31 @@
-<div>
-<header class="header">
-    <!-- Logo
-    <div class="logo">
-        @if (loggedIn()){
-      <button class = headerbtn routerLink = "dashboard"><img src="toolset.jpg" alt="Logo" class="logo-img" />
-      </button>
-    }
-    @else{
-        <img src="toolset.jpg" alt="Logo" class="logo-img" />
-    }
-    </div> -->
-    
-    <img src="logo-v2.png" alt="Logo" class="logo-img" />
+<nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top px-3">
+  <a class="navbar-brand" routerLink="">
+    <img src="logo-v2.png" class="logo-img" />
+  </a>
 
-    <nav class="nav-links">
-      <a [routerLink]="''" class="nav-link" >Home</a>
-      <a [routerLink]="'projects'" class="nav-link">Projects</a> 
-      <a href="https://github.com/dlginsburg515" class="nav-link" target="_blank" rel="noopener noreferrer">Github</a> 
-    </nav>
-   
-  </header>
-</div>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link text-danger fw-bold" routerLink="">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-danger fw-bold" routerLink="projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-danger fw-bold" href="https://github.com/dlginsburg515" target="_blank">GitHub</a>
+      </li>
+    </ul>
+  </div>
+</nav>
