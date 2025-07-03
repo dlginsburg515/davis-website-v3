@@ -1,6 +1,5 @@
 img {
     background-color: #fcfdfd;
-    padding: 10px;
 }
 
 .center-title{
@@ -27,6 +26,7 @@ img {
 .project-card .project-title {
     font-size: 25px;
     font-weight: bold;
+    
 }
 
 .project-card .project-purpose {
