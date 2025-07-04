@@ -15,16 +15,19 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse" id="navbarNav" #navbarCollapse>
     <ul class="navbar-nav ms-auto">
       <li class="nav-item">
-        <a class="nav-link text-danger fw-bold" routerLink="">Home</a>
+        <a class="nav-link text-danger fw-bold" routerLink="" (click)="closeNavbar()">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-danger fw-bold" routerLink="projects">Projects</a>
+        <a class="nav-link text-danger fw-bold" routerLink="projects" (click)="closeNavbar()">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-danger fw-bold" href="https://github.com/dlginsburg515" target="_blank">GitHub</a>
+        <a class="nav-link text-danger fw-bold" routerLink="contact" (click)="closeNavbar()">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-danger fw-bold" href="https://github.com/dlginsburg515" target="_blank" (click)="closeNavbar()">GitHub</a>
       </li>
     </ul>
   </div>
