@@ -14,7 +14,7 @@ export const PROJECTS:Project[] = [
     id: 2,
     title: "Inventory Management System",
     purpose: "CSCI 313",
-    description: "My group choose to make an application for a hardware store to use.  My portion of the project was an inventory management system.  My system allows uses to add, delete, view, search, sort or edit items that are in the system and their individual attributes.",
+    description: "My group choose to make an application for a hardware store to use.  My portion of the project was an inventory management system.  My system allows users to add, delete, view, search, sort or edit items that are in the system and their individual attributes.",
     video: "",
     priority: 3,
     hardware: "Visual Studio Code and Github Pages"
